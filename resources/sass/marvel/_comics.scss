@@ -1,0 +1,31 @@
+.container {
+    &__comics {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .card {
+            position: relative;
+
+            .title {
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $text_color;
+                font-size: 16px;
+            }
+
+            &:hover {
+                .title {
+                    display: block;
+                }
+
+                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                var(--card-image) !important;
+            }
+        }
+    }
+}

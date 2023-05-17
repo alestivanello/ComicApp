@@ -1,0 +1,15 @@
+@import 'variables';
+
+//Common elements styles
+@import "common/component";
+
+//Marvel elements styles
+@import "marvel/component";
+
+body {
+    background-color: $background_color;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,196 @@
+.card {
+  position: relative;
+  height: 400px;
+  width: 250px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card.image-fit {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card .title {
+  font-size: 1rem;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  font-family: sans-serif;
+}
+.container .page-heading {
+  background-color: red;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+.container .page-heading span {
+  font-size: 1rem;
+  color: white;
+}
+.container .page-heading strong {
+  text-transform: uppercase;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  background-color: red;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.pagination .item {
+  width: 15px;
+}
+.pagination .item.active {
+  background: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.pagination .arrow, .pagination .item {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.button {
+  height: 40px;
+  width: auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid black;
+  padding: 1rem;
+  line-height: 0rem;
+  cursor: pointer;
+}
+.button-primary {
+  background-color: white;
+  color: red;
+}
+.button-secondary {
+  background-color: red;
+  color: white;
+}
+
+.error-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  z-index: 9999;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.25);
+}
+.error-modal p {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.container__comics {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.container__comics .card {
+  position: relative;
+}
+.container__comics .card .title {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+}
+.container__comics .card:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), var(--card-image) !important;
+}
+.container__comics .card:hover .title {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .detail_page {
+    display: flex;
+  }
+}
+.detail_page .image {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .detail_page .image {
+    width: 50%;
+  }
+}
+.detail_page .details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .detail_page .details {
+    width: 50%;
+  }
+}
+.detail_page .details .title {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.detail_page .details .title h1 {
+  color: white;
+  font-size: 3rem;
+  margin: auto;
+}
+.detail_page .details .creators {
+  margin-top: 10px;
+  color: black;
+  background-color: white;
+  justify-content: flex-start;
+  font-size: 1rem;
+  overflow: auto;
+}
+.detail_page .details .creators ol {
+  width: 100%;
+  text-align: left;
+}
+.detail_page .details .creators li {
+  background-color: rgb(224, 221, 221);
+  padding: 0.5rem;
+}
+.detail_page .details .creators li:first-of-type {
+  margin-top: 1rem;
+}
+.detail_page .title,
+.detail_page .creators {
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+body {
+  background-color: #221e1e;
+}
+
+a {
+  text-decoration: none;
+}
+

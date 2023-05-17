@@ -1,0 +1,19 @@
+.card {
+    position: relative;
+    height: 400px;
+    width: 250px;
+    border: 1px solid $card_border_color;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &.image-fit {
+        object-fit: cover;
+        background-repeat: no-repeat; 
+        background-size: cover;
+    }
+
+    .title {
+        font-size: 1rem;
+        color: $text_color;
+    }
+}

@@ -1,0 +1,22 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    background-color: red;
+    padding: .5rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    .item {
+        width: 15px;
+        &.active {
+            background: black;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .arrow, .item {
+        cursor: pointer;
+        padding: .5rem;
+    }
+}
